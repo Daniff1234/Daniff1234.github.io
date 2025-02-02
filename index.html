@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clases de Ciencias Clínicas, Farmacología y Anatomía</title>
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Banner de introducción -->
+<!-- Banner de introducción -->
+<div id="intro-banner">
+    <h1>Bienvenido</h1>
+    <p>Preparando tu experiencia de aprendizaje...</p>
+    <!-- Contenedor de la barra de carga con forma de jeringa -->
+    <div id="loading-container">
+      <div id="syringe-icon">
+        <!-- SVG de jeringa (puedes ajustar el diseño según tus preferencias) -->
+        <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 21l1.5-1.5L14 8l-1.5-1.5L2 18.5V21zm20.7-17.3c.39-.39.39-1.02 0-1.41l-2.99-2.99c-.39-.39-1.02-.39-1.41 0l-1.17 1.17 4.4 4.4 1.17-1.17zM12.1 10.1l4.4 4.4-1.42 1.42-4.4-4.4 1.42-1.42z" fill="#fff"/>
+        </svg>
+      </div>
+      <div id="loading-bar">
+        <div id="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+  
+  <header>
+    <h1>Clases: Ciencias Clínicas, Farmacología y Anatomía</h1>
+  </header>
+  
+  <nav>
+    <button onclick="mostrarSeccion('clase1')">Clase 1: Ciencias Clínicas</button>
+    <button onclick="mostrarSeccion('clase2')">Clase 2: Farmacología</button>
+    <button onclick="mostrarSeccion('clase3')">Clase 3: Anatomía</button>
+    <button onclick="mostrarSeccion('completa')">Clase Completa</button>
+    <button onclick="mostrarSeccion('farmaco')">Farmacocinética y Farmacodinámica</button>
+  </nav>
+  
+  <main class="container">
+    <!-- Clase 1: Ciencias Clínicas -->
+    <section id="clase1" class="active">
+      <h2>📚 Clase 1: Ciencias Clínicas</h2>
+      
+      <article>
+        <h3>Consulta, Urgencia y Emergencia</h3>
+        <p>Cuando una persona necesita atención médica, hay tres categorías según la gravedad:</p>
+        <ul>
+          <li><strong>Consulta:</strong> Cuando se visita al médico por chequeos o síntomas leves.</li>
+          <li><strong>Urgencia:</strong> Situaciones que requieren atención rápida, pero no ponen en riesgo la vida (ejemplo: una fractura).</li>
+          <li><strong>Emergencia:</strong> Situaciones de peligro inmediato para la vida (ejemplo: un infarto).</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>🩹 Primeros Auxilios</h3>
+        <p>Son la atención inmediata que se le brinda a una persona en el lugar del incidente antes de que llegue la ayuda médica.</p>
+        <p><strong>Normas básicas de primeros auxilios:</strong></p>
+        <ul>
+          <li>✅ Mantén la calma.</li>
+          <li>✅ Solicita ayuda.</li>
+          <li>✅ No muevas a la persona si no es necesario.</li>
+          <li>✅ No des de beber ni medicinas.</li>
+          <li>✅ Asegura el lugar del accidente.</li>
+          <li>✅ Brinda apoyo psicológico.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>⛑ Protocolo PAS (Proteger, Avisar, Socorrer)</h3>
+        <ul>
+          <li>1. <strong>Proteger:</strong> Asegura el lugar para evitar más accidentes.</li>
+          <li>2. <strong>Avisar:</strong> Llama a emergencias y da datos precisos.</li>
+          <li>3. <strong>Socorrer:</strong> Atiende a la víctima solo si sabes qué hacer.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Diferencia entre Síntomas y Signos</h3>
+        <ul>
+          <li><strong>Síntoma:</strong> Lo que el paciente siente (mareo, dolor de cabeza).</li>
+          <li><strong>Signo:</strong> Lo que el médico observa (fiebre, hinchazón).</li>
+        </ul>
+      </article>
+    </section>
+    
+    <!-- Clase 2: Farmacología -->
+    <section id="clase2">
+      <h2>💊 Clase 2: Farmacología</h2>
+      
+      <article>
+        <h3>Farmacología Clínica</h3>
+        <p>Es la rama de la medicina que estudia cómo los fármacos afectan al cuerpo humano.</p>
+      </article>
+      
+      <article>
+        <h3>Farmacovigilancia</h3>
+        <p>Se encarga de detectar y prevenir reacciones adversas de los medicamentos para garantizar su seguridad.</p>
+      </article>
+      
+      <article>
+        <h3>Farmacoeconomía</h3>
+        <p>Evalúa el costo-beneficio de un medicamento en comparación con otros tratamientos.</p>
+      </article>
+      
+      <article>
+        <h3>Farmacodependencia y Drogas</h3>
+        <ul>
+          <li><strong>Farmacodependencia:</strong> Cuando una persona desarrolla adicción a una sustancia.</li>
+          <li><strong>Droga:</strong> Sustancia que altera el sistema nervioso, puede ser depresora (ralentiza funciones) o estimulante (acelera el organismo).</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>¿Qué es un fármaco?</h3>
+        <p>Es cualquier sustancia que previene, trata o alivia una enfermedad.</p>
+      </article>
+    </section>
+    
+    <!-- Clase 3: Anatomía -->
+    <section id="clase3">
+      <h2>🧬 Clase 3: Anatomía</h2>
+      
+      <article>
+        <h3>Niveles de Organización de los Seres Vivos</h3>
+        <ol>
+          <li>Nivel químico (Moléculas y átomos).</li>
+          <li>Nivel celular (Células, la unidad básica de la vida).</li>
+          <li>Nivel tisular (Tejidos formados por células).</li>
+          <li>Nivel orgánico (Órganos con funciones específicas).</li>
+          <li>Nivel sistémico (Sistemas de órganos que trabajan juntos).</li>
+        </ol>
+      </article>
+      
+      <article>
+        <h3>Tipos de Tejidos del Cuerpo</h3>
+        <ol>
+          <li><strong>Tejido Epitelial:</strong> Cubre el cuerpo y órganos internos, protege y permite absorción de sustancias.</li>
+          <li><strong>Tejido Conectivo:</strong> Une, sostiene y protege (ejemplo: huesos, cartílagos).</li>
+          <li><strong>Tejido Muscular:</strong> Permite el movimiento del cuerpo.</li>
+          <li><strong>Tejido Nervioso:</strong> Transmite información a través del cuerpo.</li>
+        </ol>
+      </article>
+    </section>
+    
+    <!-- Clase Completa -->
+    <section id="completa">
+      <h2>Clase Completa: Anatomía, Farmacología y Ciencias Clínicas</h2>
+      
+      <article>
+        <h3>ANATOMÍA Y FISIOLOGÍA: ESTRUCTURA DEL HUESO</h3>
+        <p><strong>¿Qué es el hueso?</strong></p>
+        <p>El hueso humano es un tejido vivo y dinámico que tiene una estructura compleja. Sus funciones principales son:</p>
+        <ul>
+          <li>Protección de órganos internos (Ejemplo: el cráneo protege el cerebro y las costillas protegen los pulmones).</li>
+          <li>Soporte del cuerpo.</li>
+          <li>Movimiento a través de la conexión con los músculos.</li>
+          <li>Producción de células sanguíneas en la médula ósea.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Composición del Hueso</h3>
+        <ul>
+          <li>Colágeno: Proporciona flexibilidad.</li>
+          <li>Minerales (calcio y fósforo): Brindan resistencia y dureza.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Tipos de Hueso</h3>
+        <ol>
+          <li>Hueso Compacto: Denso y fuerte.</li>
+          <li>Hueso Esponjoso: Ligero, con espacios para la médula ósea.</li>
+        </ol>
+      </article>
+      
+      <article>
+        <h3>Células óseas</h3>
+        <ul>
+          <li>Osteoblastos: Forman el hueso.</li>
+          <li>Osteocitos: Células maduras que mantienen el hueso.</li>
+          <li>Osteoclastos: Descomponen el hueso viejo.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Ejemplo de Huesos</h3>
+        <ul>
+          <li>Fémur: El hueso más largo y fuerte del cuerpo.</li>
+          <li>Cráneo: Protege el cerebro y está compuesto por varios huesos fusionados.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>FARMACOLOGÍA: FARMACOCINÉTICA Y FARMACODINAMIA</h3>
+        <p><strong>¿Qué es la Farmacocinética?</strong></p>
+        <p>Es la rama de la farmacología que estudia el paso y modificaciones que experimentan los fármacos en el organismo.</p>
+        <p><strong>Fases de la Farmacocinética</strong></p>
+        <ol>
+          <li>Liberación: El fármaco se disuelve en el organismo.</li>
+          <li>
+            Absorción: Se transporta desde el lugar de administración a la sangre.
+            <ul>
+              <li>Absorción gastrointestinal: La mayoría de los fármacos se absorben en los tubos digestivos por difusión pasiva.</li>
+              <li>Existen factores que pueden afectar la velocidad y cantidad absorbida (Ejemplo: pH estomacal, presencia de alimentos).</li>
+            </ul>
+          </li>
+          <li>
+            Distribución: Paso del fármaco de la sangre a los tejidos.
+            <ul>
+              <li>Factores que afectan la distribución:</li>
+              <ul>
+                <li>Propiedades físico-químicas del fármaco.</li>
+                <li>Flujo sanguíneo a los tejidos.</li>
+                <li>Unión del fármaco a proteínas plasmáticas.</li>
+              </ul>
+            </ul>
+          </li>
+          <li>Metabolismo: Transformación del fármaco (principalmente en el hígado).</li>
+          <li>Excreción: Eliminación del fármaco (principalmente por orina, heces o sudor).</li>
+        </ol>
+        <p><strong>Definición de Farmacocinética según la OMS</strong></p>
+        <p>Incluye los procesos de absorción, distribución en el cuerpo y eliminación del medicamento.</p>
+        <p><strong>Farmacodinamia</strong></p>
+        <p>Estudia los efectos bioquímicos y fisiológicos de los fármacos en el organismo y sus mecanismos de acción. Relaciona la concentración del fármaco con su efecto en el cuerpo.</p>
+      </article>
+      
+      <article>
+        <h3>CIENCIAS CLÍNICAS: EQUIPO DE PROTECCIÓN PERSONAL (EPP) Y CASOS MÉDICOS</h3>
+        <p><strong>¿Qué es el Equipo de Protección Personal (EPP)?</strong></p>
+        <p>Es un conjunto de dispositivos que protege a las personas de peligros que pueden causar lesiones o enfermedades.</p>
+        <p><strong>Importancia del EPP</strong></p>
+        <ul>
+          <li>Reduce la probabilidad de exposición a microbios y sustancias peligrosas.</li>
+          <li>Previene enfermedades ocupacionales.</li>
+          <li>Cumple con normativas de seguridad.</li>
+        </ul>
+        <p><strong>Tipos de Protección del EPP</strong></p>
+        <ul>
+          <li>Mascarillas: Filtran microorganismos del aire.</li>
+          <li>Guantes: Evitan el contacto directo con fluidos corporales.</li>
+          <li>Batas y uniformes: Protegen la piel y ropa de contaminantes.</li>
+          <li>Gafas y protectores faciales: Previenen salpicaduras en los ojos.</li>
+        </ul>
+        <p><strong>Casos Médicos</strong></p>
+        <ul>
+          <li>
+            Definición de Casos Médicos: Son situaciones en las que una persona presenta un problema de salud que requiere diagnóstico y tratamiento. Pueden ser enfermedades comunes o condiciones raras.
+          </li>
+          <li>
+            Ejemplos de Casos Médicos:
+            <ul>
+              <li>Enfermedad de Alzheimer: Trastorno neurodegenerativo que afecta la memoria y el pensamiento.</li>
+              <li>Fractura ósea: Rotura de un hueso que puede requerir inmovilización o cirugía.</li>
+            </ul>
+          </li>
+        </ul>
+        <p><strong>Definición de Trauma</strong></p>
+        <p>Es una lesión física causada por factores externos como:</p>
+        <ul>
+          <li>Accidentes.</li>
+          <li>Caídas.</li>
+          <li>Golpes.</li>
+          <li>Quemaduras.</li>
+        </ul>
+        <p><strong>Diferencias entre un Caso Clínico y un Caso por Trauma</strong></p>
+        <ul>
+          <li>Caso Clínico: Afección de salud con origen interno (Ejemplo: Diabetes, Alzheimer).</li>
+          <li>Caso por Trauma: Lesión física causada por un agente externo (Ejemplo: Fractura por accidente).</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>RESUMEN GENERAL</h3>
+        <ol>
+          <li>Anatomía y Fisiología: El hueso es un tejido vivo con funciones de protección, soporte y producción de células sanguíneas.</li>
+          <li>Farmacología: La farmacocinética estudia el proceso de absorción, distribución, metabolismo y excreción de los fármacos.</li>
+          <li>Ciencias Clínicas: El EPP es esencial para la seguridad del personal de salud y los casos clínicos pueden clasificarse según su origen en enfermedades o traumas.</li>
+        </ol>
+      </article>
+    </section>
+    
+    <!-- Farmacocinética y Farmacodinámica -->
+    <section id="farmaco">
+      <h2>Farmacocinética y Farmacodinámica</h2>
+      
+      <article>
+        <p>La farmacocinética y la farmacodinámica son dos ramas fundamentales de la farmacología que se enfocan en aspectos distintos de la acción de los fármacos:</p>
+        <ul>
+          <li>
+            <strong>Farmacocinética:</strong> Se ocupa del recorrido del fármaco en el organismo, es decir, lo que el cuerpo le hace al fármaco. Incluye procesos como:
+            <ul>
+              <li>Absorción: Cómo y en qué medida el fármaco entra en el torrente sanguíneo.</li>
+              <li>Distribución: Cómo se distribuye el fármaco por los diferentes tejidos y órganos.</li>
+              <li>Metabolismo: Cómo el cuerpo transforma químicamente el fármaco.</li>
+              <li>Excreción: Cómo y a través de qué medios el fármaco y sus metabolitos son eliminados del organismo.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Farmacodinámica:</strong> Se centra en los efectos que el fármaco produce en el organismo, es decir, lo que el fármaco le hace al cuerpo. Esto incluye:
+            <ul>
+              <li>Mecanismo de acción: Cómo interactúa el fármaco con sus receptores o blancos biológicos.</li>
+              <li>Relación dosis-respuesta: Cómo varían los efectos del fármaco según su concentración y dosis administrada.</li>
+              <li>Efectos terapéuticos y adversos: Los beneficios y posibles efectos secundarios resultantes de la interacción del fármaco con el organismo.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>En resumen, la farmacocinética estudia el movimiento del fármaco en el cuerpo, mientras que la farmacodinámica investiga la respuesta del organismo al fármaco.</p>
+      </article>
+    </section>
+  </main>
+  
+  <!-- Footer animado -->
+  <footer>
+    <p>Gracias por visitar la página de Clases de Ciencias Clínicas, Farmacología y Anatomía.</p>
+  </footer>
+  
+  <!-- Enlace al JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

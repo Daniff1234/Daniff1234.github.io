@@ -1,0 +1,265 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Banner de introducción */
+  #intro-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #0073e6, #00aaff);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeOut 1s ease-in-out forwards;
+    animation-delay: 3s;
+  }
+  
+  #intro-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: slideIn 1s ease-out;
+  }
+  
+  #intro-banner p {
+    font-size: 1.5rem;
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Keyframes para animación de slide in */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes para fade out del banner */
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  
+  header {
+    background: url('img/equipo epp.jpg') center/cover no-repeat, #0073e6;
+    color: #fff;
+    padding: 1.5rem 1rem; /* Ajusta el espacio interno */
+    text-align: center;
+    animation: fadeInDown 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px; /* Ajusta la altura para que no sea muy alto */
+}
+
+header h1 {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar visibilidad */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
+}
+
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animación sutil de pulso en el header al pasar el mouse */
+  header:hover {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  
+  nav {
+    background: #005bb5;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  nav button {
+    background: #0088ff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  nav button:hover {
+    background: #006bb3;
+    transform: scale(1.05);
+  }
+  
+  /* Animación para botones al hacer click (feedback visual) */
+  nav button:active {
+    transform: scale(0.95);
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeIn 2s ease-in;
+  }
+  
+  /* Mostrar solo la sección activa */
+  section {
+    display: none;
+    margin-bottom: 2rem;
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 0.3rem;
+  }
+  
+  /* Animación para artículos: se deslizan ligeramente al aparecer */
+  article {
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: articleFadeIn 0.8s forwards;
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes articleFadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  ul, ol {
+    margin-left: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Animación general de fadeIn */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* ---------------------------------- */
+  /* Animaciones para transición de secciones */
+  /* ---------------------------------- */
+  
+  /* Keyframes para animar la entrada de una sección */
+  @keyframes sectionFadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Keyframes para animar la salida de una sección */
+  @keyframes sectionFadeOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+  
+  /* Clases para animación de entrada y salida */
+  .section-animate-in {
+    animation: sectionFadeIn 0.8s ease-out forwards;
+  }
+  
+  .section-animate-out {
+    animation: sectionFadeOut 0.8s ease-out forwards;
+  }
+
+  /* ----- Estilos para la barra de carga con forma de jeringa ----- */
+
+#loading-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  
+  #syringe-icon {
+    margin-right: 1rem;
+  }
+  
+  /* Contenedor de la barra de carga */
+  #loading-bar {
+    position: relative;
+    width: 200px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  /* Barra de progreso que se animará */
+  #loading-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    border-radius: 6px;
+    animation: loadingAnimation 3s forwards;
+  }
+  
+  /* Keyframes para la animación de la barra de carga */
+  @keyframes loadingAnimation {
+    from { width: 0%; }
+    to   { width: 100%; }
+  }
+  
